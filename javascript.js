@@ -1,0 +1,1 @@
+const rateElement = document.getElementById('')
