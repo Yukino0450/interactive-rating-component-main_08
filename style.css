@@ -35,14 +35,14 @@ body {
   height: 32vh;
 }
 
-.number {
+.numbercontainer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 2vh;
 }
 
-.number div {
+.number {
   background-color: #2f3c48;
   width: 2vw;
   height: 2vw;
@@ -90,9 +90,9 @@ img {
   height: 1.5vh;
 }
 
-.number div:hover {
+.number:hover {
   cursor: pointer;
-  background-color: #ff7713;
+  background-color: #7a8797;
   color: white;
 }
 
@@ -120,11 +120,12 @@ img {
 }
 
 .appriciation {
-  font-size: 5px;
+  font-size: 10px;
   text-align: center;
   width: 18.5vw;
-  color: rgb(160, 160, 160);
+  color: gray;
   line-height: 15px;
+  font-weight: 400;
 }
 
 .thanks {
@@ -144,4 +145,9 @@ img {
   align-items: center;
   background-color: #2f3c48;
   font-weight: lighter;
+}
+
+.clicked {
+  background-color: #fc7613;
+  color: white;
 }

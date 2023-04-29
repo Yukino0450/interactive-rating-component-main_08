@@ -20,7 +20,7 @@
   <body>
     <!-- Rating state start -->
     <div class="main">
-      <div class="sub-main">
+      <div class="sub-main" id="first-page">
         <div class="star">
           <img src="images/icon-star.svg" alt="star" />
         </div>
@@ -29,16 +29,16 @@
           Please let us know how we did with your support request. All feedback
           is appreciated to help us improve our offering!
         </div>
-        <div class="number">
-          <div id="number1">1</div>
-          <div id="number2">2</div>
-          <div id="number3">3</div>
-          <div id="number4">4</div>
-          <div id="number5">5</div>
+        <div class="numbercontainer">
+          <div class="number" id="number1" onclick="changedColor(1)">1</div>
+          <div class="number" id="number2" onclick="changedColor(2)">2</div>
+          <div class="number" id="number3" onclick="changedColor(3)">3</div>
+          <div class="number" id="number4" onclick="changedColor(4)">4</div>
+          <div class="number" id="number5" onclick="changedColor(5)">5</div>
         </div>
-        <div class="submit-button"><p>SUBMIT</p></div>
+        <div class="submit-button" onclick="submit()"><p>SUBMIT</p></div>
       </div>
-      <div class="sub-main">
+      <div class="sub-main hidden" id="second-page">
         <div class="second-page">
           <div>
             <img
@@ -47,7 +47,7 @@
               alt="score"
             />
           </div>
-          <p class="rating">You selected out of 5</p>
+          <p class="rating" id="selectedRate">You selected out of 5</p>
           <p class="thanks">Thank you!</p>
           <div class="appriciation">
             We appreciate you taking the time to give a rating. If you ever need
